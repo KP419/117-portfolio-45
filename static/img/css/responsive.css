@@ -1,0 +1,82 @@
+/* Media Queries for Responsiveness */
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .about-description-container {
+        padding: 10px;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        font-size: 16px;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+
+    .about-description-container {
+        padding: 20px;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 901px) and (max-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+
+    .about-description-container {
+        padding: 30px;
+    }
+}
+
+/* TV styles */
+@media (min-width: 1201px) {
+    body {
+        font-size: 20px;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+
+    .about-description-container {
+        padding: 40px;
+    }
+}
+
+/* Media query for screens with a maximum width of 780px */
+@media (max-width: 780px) {
+    .projects-list {
+        flex-direction: column;
+        /* Stack the project cards vertically */
+        align-items: center;
+        /* Center the project cards */
+    }
+
+    .project-card {
+        width: 90%;
+        /* Make the project cards take up 90% of the screen width */
+        margin-bottom: 20px;
+        /* Add some margin between cards */
+    }
+}

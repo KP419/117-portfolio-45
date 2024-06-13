@@ -1,0 +1,140 @@
+/* about-section */
+.about-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.about-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%; 
+    height: auto%; 
+}
+
+
+.about-image-container img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.about-description-container {
+    flex: 2;
+    width: 68%; /* This can be adjusted or removed based on the flex property */
+}
+
+.label-container {
+    margin-top: 20px;
+}
+
+.label-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    
+}
+
+.label-text {
+    display: inline-block; 
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 2%;
+    text-align: left;
+    vertical-align: top; 
+    box-sizing: border-box; 
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .about-image-container {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-description-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-description-container h1,
+    .about-description-container h2 {
+        font-size: 1.2em;
+    }
+
+    .about-description-container p {
+        font-size: 0.9em;
+    }
+
+    .label-text {
+        font-size: 0.8em;
+    }
+}
+
+/* projects section  */
+
+.project-card {
+    background: black;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px; /* Adjust width as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}.project-card:hover{
+    opacity: 0.5;
+    border: solid 1px var(--neutral-color);
+}
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust gap between skills */
+    justify-content: center;
+}
+a p:nth-child(2){
+font-weight: bolder;
+font-size: 1.1rem;
+margin: .5rem 0px;
+color: var(--secondary-color-700);
+}
+a p:nth-child(3){
+font-style: italic;
+}
+a p:nth-child(4){
+    font-style: italic;
+    font-weight: bolder;
+    letter-spacing: .2rem;
+    margin-top: .5rem;
+
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap; /* To allow wrapping if there are too many cards */
+    gap: 20px; /* Adjust the gap between project cards */
+    justify-content: space-around; /* Adjust as needed */
+    width: 100%;
+}
