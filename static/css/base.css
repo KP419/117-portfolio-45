@@ -1,32 +1,34 @@
 /* variables */
 :root {
-    --primary-color:#9E90A2;
-    --primary-color-100:#E7E3E8;
-    --primary-color-700:#504653;
+    --primary-color: #9E90A2;
+    --primary-color-100: #E7E3E8;
+    --primary-color-700: #504653;
 
 
-    --secondary-color:#B6C2D9;
-    --secondary-color-100:#DDE3EE;
-    --secondary-color-700:#344565;
+    --secondary-color: #B6C2D9;
+    --secondary-color-100: #DDE3EE;
+    --secondary-color-700: #344565;
 
-    --neutral-color:#EEF3F7;
+    --neutral-color: #EEF3F7;
 
-    --background-color:#96B4CF;
+    --background-color: #96B4CF;
 
-    --label-color:#465C86;
-    --labelbackground-color:#F3F1F3;
+    --label-color: #465C86;
+    --labelbackground-color: #F3F1F3;
 
-    --surface-color:#203446;
+    --surface-color: #203446;
 
-    --lobster-font:"Lobster Two", sans-serif;
-    --sans-font:"DM Sans", sans-serif;
+    --lobster-font: "Lobster Two", sans-serif;
+    --sans-font: "DM Sans", sans-serif;
 }
-.center-row{
+
+.center-row {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.center-column{
+
+.center-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,9 +46,11 @@ html {
     margin: 0px;
     padding: 0px;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 /* Text style */
 
 h1 {
@@ -65,11 +69,20 @@ p {
     color: var(--neutral-color);
 }
 
-.label-text{
+.label-text {
     color: var(--label-color);
     background-color: var(--labelbackground-color);
     text-transform: uppercase;
     font-weight: 600;
-    padding:  0.8rem, ;
+    padding: 0.8rem, ;
 }
 
+
+
+.projects-container {
+    display: flex;
+}
+
+.projects-container .project-card {
+    margin: 12px;
+}

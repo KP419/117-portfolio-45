@@ -1,20 +1,49 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="img/" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet" />
+        <link rel="stylesheet" href="{% static './css/base.css' %}" >
+        <link rel="stylesheet" href="{% static './css/header.css' %}" >
+        <link rel="stylesheet" href="{% static './css/sections.css' %}" >
+        <link rel="stylesheet" href="{% static './css/responsive.css' %}"  >
+    
+
     <title>{% block title %}{% endblock title %}</title>
 </head>
 
 <body>
-    <h1>Here is my header</h1>
+    <header>
+        <!-- left side -->
+        <div class="logo center-row">
+            <a href=" {% url 'home' %}">
+                <h2>Kory Plotts</h2>
+            </a>
+        </div>
+        <nav class="nav-menu">
+            <!-- the menu -->
+            <div class="nav-option center-row">
+                <a href="{% url 'about'  %}">About me</a>
+                <a href="{% url 'projects_list' %}">Projects</a>
+                <a href="">Experience</a>
+                <a href="">Contact</a>
+            </div>
+        </nav>
+    </header>
 
     {% block content %}
 
     {% endblock content %}
 
-    <h2>Here is footer</h2>
+    <h2>My footer should be here </h2>
 </body>
 
 </html>
