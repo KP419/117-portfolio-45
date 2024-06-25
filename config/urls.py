@@ -26,7 +26,6 @@ urlpatterns = [
     path("content/", include("content.urls")),
     path("", home, name="home"),
 
-
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
